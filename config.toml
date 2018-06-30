@@ -8,14 +8,40 @@ theme = "after-dark" # Set default theme
 enableRobotsTXT = true # Suggested, enable robots.txt file
 googleAnalytics = "" # Optional, add tracking Id for analytics
 disqusShortname = "" # Optional, add Disqus shortname for comments
-SectionPagesMenu = "main" # Enable menu system for lazy bloggers
+sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
+
+[[menu.main]]
+  name = "Home"
+  weight = 1
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "Posts"
+  weight = 1
+  identifier = "post"
+  url = "/"
+[[menu.main]]
+  name = "GitLab"
+  weight = 2
+  identifier = "gitlab"
+  url = "https://gitlab.potatofrom.space"
+[[menu.main]]
+  name = "Mastodon"
+  weight = 2
+  identifier = "mastodon"
+  url = "https://fedi.potatofrom.space"
+[[menu.main]]
+  name = "Matrix"
+  weight = 2
+  identifier = "matrix"
+  url = "https://riot.potatofrom.space"
 
 [params]
   description = "" # Suggested, controls default description meta
   author = "" # Optional, controls author name display on posts
   hide_author = false # Optional, set true to hide author name on posts
-  show_menu = false # Optional, set true to enable section menu
+  show_menu = true # Optional, set true to enable section menu
   powered_by = true # Optional, set false to disable credits
   images = [
     "https://source.unsplash.com/category/technology/2000x1322"
