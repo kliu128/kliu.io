@@ -1,6 +1,6 @@
-baseurl = "https://c74ce35e.ngrok.io/" # Controls base URL
+baseurl = "https://potatofrom.space/" # Controls base URL
 languageCode = "en-US" # Controls site language
-title = "After Dark" # Homepage title and page title suffix
+title = "Potatoblog" # Homepage title and page title suffix
 paginate = 11 # Number of posts to show before paginating
 
 theme = "after-dark" # Set default theme
