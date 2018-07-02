@@ -12,12 +12,7 @@ sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 
 [[menu.main]]
-  name = "Home"
-  weight = 1
-  identifier = "home"
-  url = "/"
-[[menu.main]]
-  name = "Posts"
+  name = "Blog"
   weight = 1
   identifier = "post"
   url = "/"
@@ -36,6 +31,11 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   weight = 2
   identifier = "matrix"
   url = "https://riot.potatofrom.space"
+[[menu.main]]
+  name = "About"
+  weight = 3
+  identifier = "about"
+  url = "/about"
 
 [params]
   description = "A literal potato" # Suggested, controls default description meta
