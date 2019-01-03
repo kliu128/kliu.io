@@ -14,8 +14,8 @@ build:
   stage: build
   script:
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
-    - docker build --pull -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG" .
-    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
+    - docker build --pull -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA" .
+    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA"
 
 deploy:
   environment:
@@ -28,7 +28,7 @@ deploy:
     - kubectl version
     - cd manifests/
     - sed -i "s/__CI_ENVIRONMENT_SLUG__/${CI_ENVIRONMENT_SLUG}/" deployment.yaml ingress.yaml service.yaml
-    - sed -i "s/__VERSION__/${CI_COMMIT_REF_SLUG}/" deployment.yaml ingress.yaml service.yaml
+    - sed -i "s/__VERSION__/${CI_COMMIT_SHA}/" deployment.yaml ingress.yaml service.yaml
     - kubectl apply -f deployment.yaml
     - kubectl apply -f service.yaml
     - kubectl apply -f ingress.yaml
