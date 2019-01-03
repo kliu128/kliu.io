@@ -39,7 +39,7 @@ deploy:
     - kubectl version
     - cd manifests/
     - sed -i "s/__CI_ENVIRONMENT_SLUG__/${CI_ENVIRONMENT_SLUG}/" deployment.yaml ingress.yaml service.yaml
-    - sed -i "s/__VERSION__/${CI_COMMIT_REF_NAME}/" deployment.yaml ingress.yaml service.yaml
+    - sed -i "s/__VERSION__/${CI_COMMIT_REF_SLUG}/" deployment.yaml ingress.yaml service.yaml
     - kubectl apply -f deployment.yaml
     - kubectl apply -f service.yaml
     - kubectl apply -f ingress.yaml
