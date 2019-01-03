@@ -31,6 +31,8 @@ build:
 deploy:
   variables:
     GIT_STRATEGY: none
+  environment:
+    name: Zero
   image: lachlanevenson/k8s-kubectl:latest
   stage: deploy
   only:
