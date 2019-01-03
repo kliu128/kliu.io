@@ -28,3 +28,12 @@ build:
     - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
   except:
     - master
+
+deploy:
+  image: lachlanevenson/k8s-kubectl:latest
+  stage: deploy
+  only:
+    - master
+  script:
+    - kubectl version
+    - kubectl patch deployment/blog -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"ci-last-updated\":\"$(date +'%s')\"}}}}}"
