@@ -11,11 +11,19 @@ disqusShortname = "" # Optional, add Disqus shortname for comments
 sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
 [[menu.main]]
   name = "Blog"
   weight = 1
   identifier = "post"
   url = "/"
+[[menu.main]]
+  name = "Search"
+  weight = 1
+  identifier = "search"
+  url = "/search/"
 [[menu.main]]
   name = "GitLab"
   weight = 2
