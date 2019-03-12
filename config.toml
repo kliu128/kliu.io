@@ -1,57 +1,63 @@
 baseurl = "https://potatofrom.space/" # Controls base URL
+copyright = "Kevin Liu"
 languageCode = "en-US" # Controls site language
-title = "Potatoblog" # Homepage title and page title suffix
 paginate = 11 # Number of posts to show before paginating
-
-theme = "after-dark" # Set default theme
-
-enableRobotsTXT = true # Suggested, enable robots.txt file
-googleAnalytics = "" # Optional, add tracking Id for analytics
-disqusShortname = "" # Optional, add Disqus shortname for comments
-sectionPagesMenu = "main" # Enable menu system for lazy bloggers
-footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
+theme = "terminal" # Set default theme
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
-
-[[menu.main]]
-  name = "Blog"
-  weight = 1
-  identifier = "post"
-  url = "/"
-[[menu.main]]
-  name = "Search"
-  weight = 1
-  identifier = "search"
-  url = "/search/"
-[[menu.main]]
-  name = "GitLab"
-  weight = 2
-  identifier = "gitlab"
-  url = "https://gitlab.potatofrom.space"
-[[menu.main]]
-  name = "Mastodon"
-  weight = 2
-  identifier = "mastodon"
-  url = "https://fedi.potatofrom.space"
-[[menu.main]]
-  name = "Matrix"
-  weight = 2
-  identifier = "matrix"
-  url = "https://riot.potatofrom.space"
-[[menu.main]]
-  name = "About"
-  weight = 3
-  identifier = "about"
-  url = "/about"
+home = ["HTML", "RSS"]
 
 [params]
-  description = "A literal potato" # Suggested, controls default description meta
-  author = "Kevin Liu" # Optional, controls author name display on posts
-  hide_author = false # Optional, set true to hide author name on posts
-  show_menu = true # Optional, set true to enable section menu
-  has_cookies = false
-  images = [
-    "https://source.unsplash.com/category/technology/2000x1322"
-  ] # Suggested, controls default Open Graph images
-  theme_variant = "" # Optional, for use to overriding default theme
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "post"
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "green"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 6
+  # set theme to full screen width
+  fullWidthTheme = false
+  # center theme with default width
+  centerTheme = true
+
+[languages]
+  [languages.en]
+    title = "Potatoblog"
+    subtitle = "Kevin Liu's sporadically-updated webspace"
+    keywords = "blog tech copyright"
+    copyright = '''
+      <div>
+        <p>&copy; 2019 Kevin Liu &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+        <p>Potato Industries provides an SLA of at least one 9 of uptime (90%). If we
+        at any time fail to reach this standard, you are entitled to a refund of
+        usage costs.</p>
+      </div>
+    '''
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "Potatoblog"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        name = "GitLab"
+        identifier = "gitlab"
+        url = "https://gitlab.potatofrom.space"
+      [[languages.en.menu.main]]
+        name = "Mastodon"
+        identifier = "mastodon"
+        url = "https://fedi.potatofrom.space"
+      [[languages.en.menu.main]]
+        name = "Matrix"
+        identifier = "matrix"
+        url = "https://riot.potatofrom.space"
+      [[languages.en.menu.main]]
+        name = "About"
+        identifier = "about"
+        url = "/about"
