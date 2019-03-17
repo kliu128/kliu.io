@@ -30,6 +30,9 @@ home = ["HTML", "RSS"]
         <p>Potato Industries provides an SLA of at least one 9 of uptime (90%). If we
         at any time fail to reach this standard, you are entitled to a refund of
         usage costs.</p>
+
+        <!-- for mastodon verification -->
+        <a rel="me" hidden href="https://fedi.potatofrom.space/@kevin">Mastodon</a>
       </div>
     '''
     menuMore = "Show more"
@@ -52,7 +55,7 @@ home = ["HTML", "RSS"]
       [[languages.en.menu.main]]
         name = "Mastodon"
         identifier = "mastodon"
-        url = "https://fedi.potatofrom.space"
+        url = "https://fedi.potatofrom.space/@kevin"
       [[languages.en.menu.main]]
         name = "Matrix"
         identifier = "matrix"
