@@ -5,7 +5,7 @@ description = "My LizardFS storage setup - basically living the dream"
 draft = false
 toc = true
 categories = []
-tags = []
+tags = ["tech", "homelab"]
 images = []
 +++
 

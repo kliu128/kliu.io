@@ -5,7 +5,7 @@ description = "An adventure on VFIO escapades in Proxmox Linux"
 draft = false
 toc = false
 categories = []
-tags = ["vfio", "tech"]
+tags = ["vfio", "tech", "homelab"]
 images = []
 +++
 

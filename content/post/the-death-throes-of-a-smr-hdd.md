@@ -5,7 +5,7 @@ description = "It's never a good sign when ZFS starts giving you **uncorrectable
 draft = false
 toc = false
 categories = []
-tags = []
+tags = ["tech", "homelab"]
 images = []
 +++
 

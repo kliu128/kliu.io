@@ -4,7 +4,7 @@ date = 2019-01-27T09:00:44-05:00
 description = "One-button scanning to PDF from a $50 scanner on eBay"
 toc = false
 categories = []
-tags = []
+tags = ["tech"]
 images = []
 +++
 
