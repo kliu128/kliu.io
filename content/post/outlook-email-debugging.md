@@ -35,3 +35,5 @@ After a few weeks of back-and-forth, sending example email headers from those th
 Previously, I had the DNS set up like so: MX (mail) --> CNAME (alias to another domain) --> A (IP address of mail server). As suggested, I changed it to MX --> A, retested, and... it worked!
 
 In summary: Outlook doesn't like MX records pointing to CNAMEs, apparently. I'd be interested to know if this is standard behavior at all or if it's just a Microsoft peculiarity (especially since all other mail servers appear to be fine with a CNAME.)
+
+edit: Actually, [upon further research](https://exchangepedia.com/2006/12/should-mx-record-point-to-cname-records-aliases.html) it appears that RFC 2181 *does* mandate pointing an MX directly to an A record. So Outlook is in the clear here (although most mail servers apparently handle MX -> CNAME -> A alright). An interesting quirk to keep in mind!
