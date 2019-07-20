@@ -5,7 +5,7 @@ description = "The story of [issue 217](https://github.com/ROCmSoftwarePlatform/
 draft = false
 toc = false
 categories = []
-tags = []
+tags = ["tech"]
 images = []
 +++
 

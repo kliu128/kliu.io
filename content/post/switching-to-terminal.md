@@ -5,7 +5,7 @@ description = "A new look for the same site!"
 draft = false
 toc = false
 categories = []
-tags = []
+tags = ["meta"]
 images = []
 +++
 
