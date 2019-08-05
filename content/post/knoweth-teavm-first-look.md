@@ -87,6 +87,8 @@ You may have seen a theme here. TeaVM is incredibe technology, but it is unfortu
 
 I would still recommend you try it out, though! And perhaps file a few issues, or write some documentation. When it works, it is amazing to use.
 
+(Disclaimer: this is a _first look_. If any experienced TeaVM users would like to chime in with corrections or advice, please do so in the comments!)
+
 [knoweth github]: https://github.com/knoweth/knoweth
 [kunal redesign post]: https://insensitive.co/posts/2019/03/anki-redesign-and-development-part-1/
 [teavm homepage]: http://teavm.org
