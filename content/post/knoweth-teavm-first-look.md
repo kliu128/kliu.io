@@ -22,6 +22,8 @@ So considering the sizable proportion of developers who [hate JavaScript][cancer
 
 ## Trying it Out
 
+[UPDATE 2019-08-10: This post has been lightly revised due to the [comments of konsoletyper, TeaVM's developer](https://www.reddit.com/r/java/comments/cm3oh9/first_look_at_teavm_java_on_the_browser/ew3fksr/). One thing not mentioned in this post is how willing the developer is to provide help ;).]
+
 Let's try it out:
 
 ```
@@ -58,26 +60,27 @@ public interface UserService {
 }
 
 ...
-
-UserService r = RESTClient.factory(UserService.class).createResource("");
-BackgroundWorker worker = new BackgroundWorker();
-worker.run(() -> {
-    try {
-        // Should make a POST request to /login with JSON body
-        r.login(new LoginBody("bob", "bob"));
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-});
+public UserView() {
+    UserService r = RESTClient.factory(UserService.class).createResource("");
+    BackgroundWorker worker = new BackgroundWorker();
+    worker.run(() -> {
+        try {
+            // Should make a POST request to /login with JSON body
+            r.login(new LoginBody("bob", "bob"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    });
+}
 ```
 
-Issue #1 is that you _need_ to make the login request from a `BackgroundWorker`, a class that Flavour uses to run background methods and update bound templates afterward, leveraging TeaVM's async support. (That's right: TeaVM added green threads to Java. In JavaScript.) This is not documented on their [REST client docs][] (although it is on their [advanced UI components page][]); I only figured it out by coming across a chance Google Groups post. 
+~~Issue #1 is that you _need_ to make the login request from a `BackgroundWorker`.~~ In this _specific case_, you need to make this request from an asynchronous context. In this example, it uses a BackgroundWorker, a class that Flavour uses to run background methods and update bound templates afterward, leveraging TeaVM's async support. (That's right: TeaVM added green threads to Java. In JavaScript.) This is not documented on their [REST client docs][] (although it is on their [advanced UI components page][] and is explained more on [their coroutines page](http://teavm.org/docs/runtime/coroutines.html)); I only figured it out by coming across a chance Google Groups post.
 
 The second issue is this one:
 
 ![fetch request fails with Java exception thrown](/images/2019-07-22-knoweth-teavm-first-look/java-exception-thrown.png)
 
-An error whose undescriptiveness rivals babel-transpiled asynchronous JavaScript code. The core issue is actually _not_ a Java exception; rather, it's a JavaScript error from within standard library `RequestImpl` code, hence why it provides no description of what the error is. The REST client attempts, in 0.6.0-dev-816, to call a JS function that does not exist (`otfri_RequestImpl_send0`), and it fails with the JavaScript error `otfri_RequestImpl_send0 is not defined`. The only way I've been able to fix this is to roll back to Java 8 + TeaVM 0.5.1, which fixes the problem. (Issue reference: [#407](https://github.com/konsoletyper/teavm/issues/407).)
+An error whose ~~undescriptiveness rivals babel-transpiled asynchronous JavaScript code~~. (Correction: Babel code is actually worse, since it doesn't preserve the stack trace, while TeaVM does so.) The core issue is actually _not_ a Java exception; rather, it's a JavaScript error from within standard library `RequestImpl` code, hence why it provides no description of what the error is. The REST client attempts, in 0.6.0-dev-816, to call a JS function that does not exist (`otfri_RequestImpl_send0`), and it fails with the JavaScript error `otfri_RequestImpl_send0 is not defined`. ~~The only way I've been able to fix this is to roll back to Java 8 + TeaVM 0.5.1, which fixes the problem.~~ The underlying problem is that you can't use unstable TeaVM (0.6.0) with stable Flavour (0.1.0); upgrade Flavour to 0.2.0-dev. (Issue reference: [#407](https://github.com/konsoletyper/teavm/issues/407).)
 
 As a whole, there also doesn't appear to be a way to make low-level HTTP requests (e.g. setting headers) other than by writing JavaScript bindings in Java (which is also woefully underdocumented.)
 
