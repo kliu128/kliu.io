@@ -1,4 +1,4 @@
-baseurl = "https://potatofrom.space/" # Controls base URL
+baseurl = "https://kliu.io/" # Controls base URL
 copyright = "Kevin Liu"
 languageCode = "en-US" # Controls site language
 paginate = 11 # Number of posts to show before paginating

@@ -11,6 +11,8 @@ spec:
         - blog.potatofrom.space
         - www.potatofrom.space
         - potatofrom.space
+        - kliu.io
+        - www.kliu.io
   rules:
   - host: blog.potatofrom.space
     http:
@@ -27,6 +29,21 @@ spec:
           serviceName: blog
           servicePort: 80
   - host: potatofrom.space
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: blog
+          servicePort: 80
+
+  - host: kliu.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: blog
+          servicePort: 80
+  - host: www.kliu.io
     http:
       paths:
       - path: /
