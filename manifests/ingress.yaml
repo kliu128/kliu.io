@@ -8,11 +8,39 @@ spec:
   tls:
     - secretName: blog-tls
       hosts:
+        - kliu.io
+        - www.kliu.io
+  rules:
+  - host: kliu.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: blog
+          servicePort: 80
+  - host: www.kliu.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: blog
+          servicePort: 80
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/tls-acme: 'true'
+    nginx.ingress.kubernetes.io/rewrite-target: "/"
+    nginx.ingress.kubernetes.io/configuration-snippet: 'return 301 $scheme://kliu.io$request_uri;'
+  name: blog-redirect
+spec:
+  tls:
+    - secretName: blog-redirect-tls
+      hosts:
         - blog.potatofrom.space
         - www.potatofrom.space
         - potatofrom.space
-        - kliu.io
-        - www.kliu.io
   rules:
   - host: blog.potatofrom.space
     http:
@@ -29,21 +57,6 @@ spec:
           serviceName: blog
           servicePort: 80
   - host: potatofrom.space
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: blog
-          servicePort: 80
-
-  - host: kliu.io
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: blog
-          servicePort: 80
-  - host: www.kliu.io
     http:
       paths:
       - path: /
