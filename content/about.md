@@ -9,7 +9,7 @@ Hi! I'm a high school student who likes to program. This is my website, where I 
 If you want to contact me, please do at (in order of preference):
 
 - Matrix: [@kevin:potatofrom.space](https://matrix.to/#/@kevin:potatofrom.space)
-- Email: [kevin@potatofrom.space](mailto:kevin@potatofrom.space)
+- Email: [kevin@kliu.io](mailto:kevin@kliu.io)
 - Fediverse: [@kevin@potatofrom.space](https://fedi.potatofrom.space/@kevin)
 - [LinkedIn](https://www.linkedin.com/in/the-kevin-liu/)
 
