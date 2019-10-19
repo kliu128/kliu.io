@@ -13,7 +13,7 @@ If you want to contact me, please do at (in order of preference):
 - Fediverse: [@kevin@potatofrom.space](https://fedi.potatofrom.space/@kevin)
 - [LinkedIn](https://www.linkedin.com/in/the-kevin-liu/)
 
-You can find the source code of this blog [here](https://gitlab.potatofrom.space/kevin/potatofrom.space).
+You can find the source code of this blog [here](https://gitlab.kliu.io/kevin/potatofrom.space).
 
 ## GPG Key
 

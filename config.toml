@@ -51,7 +51,7 @@ home = ["HTML", "RSS"]
       [[languages.en.menu.main]]
         name = "GitLab"
         identifier = "gitlab"
-        url = "https://gitlab.potatofrom.space"
+        url = "https://gitlab.kliu.io"
       [[languages.en.menu.main]]
         name = "Mastodon"
         identifier = "mastodon"
