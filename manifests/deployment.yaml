@@ -15,7 +15,7 @@ spec:
         ref: __CI_ENVIRONMENT_SLUG__
     spec:
       containers:
-      - image: registry.potatofrom.space/kevin/potatofrom.space:__VERSION__
+      - image: registry.kliu.io/kevin/potatofrom.space:__VERSION__
         name: blog
       restartPolicy: Always
 status: {}
