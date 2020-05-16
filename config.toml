@@ -27,13 +27,10 @@ home = ["HTML", "RSS"]
     keywords = "blog tech copyright"
     copyright = '''
       <div>
-        <p>&copy; 2019 Kevin Liu &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+        <p>&copy; 2020 Kevin Liu &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
         <p>Potato Industries provides an SLA of at least one 9 of uptime (90%). If we
         at any time fail to reach this standard, you are entitled to a refund of
         usage costs.</p>
-
-        <!-- for mastodon verification -->
-        <a rel="me" hidden href="https://fedi.potatofrom.space/@kevin">Mastodon</a>
       </div>
     '''
     menuMore = "Show more"
