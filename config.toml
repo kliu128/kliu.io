@@ -18,6 +18,7 @@ home = ["HTML", "RSS"]
   fullWidthTheme = false
   # center theme with default width
   centerTheme = true
+  oneHeadingSize = false
 
 [languages]
   [languages.en]
