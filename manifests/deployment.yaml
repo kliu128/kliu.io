@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
@@ -6,16 +6,17 @@ metadata:
     ref: __CI_ENVIRONMENT_SLUG__
   name: blog
 spec:
+  selector:
+    matchLabels:
+      app: blog
+      ref: __CI_ENVIRONMENT_SLUG__
   replicas: 2
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: blog
         ref: __CI_ENVIRONMENT_SLUG__
     spec:
       containers:
-      - image: registry.kliu.io/kevin/potatofrom.space:__VERSION__
+      - image: registry.kliu.io/kevin/kliu.io:latest
         name: blog
-      restartPolicy: Always
-status: {}
