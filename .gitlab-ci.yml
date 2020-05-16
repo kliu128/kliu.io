@@ -21,6 +21,8 @@ build:
 deploy:
   environment:
     name: Zero
+    kubernetes:
+      namespace: default
   image: lachlanevenson/k8s-kubectl:latest
   stage: deploy
   only:
