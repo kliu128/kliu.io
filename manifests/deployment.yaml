@@ -13,6 +13,8 @@ spec:
   replicas: 2
   template:
     metadata:
+      annotations:
+        version: __VERSION__
       labels:
         app: blog
         ref: __CI_ENVIRONMENT_SLUG__
