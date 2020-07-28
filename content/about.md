@@ -1,31 +1,15 @@
 ---
 title: About
-date: 2018-07-02T13:16:44-04:00
+date: 2020-07-28T09:56:48-04:00
 draft: false
 ---
 
-Hi! I'm a high school student who likes to program. This is my website, where I self-host various services that you can find in the upper header.
+Hi! I'm an incoming undergraduate student at Stanford. This is my blog, where I sporadically post interesting programming (and occasionally other) tidbits.
 
-If you want to contact me, please do at (in order of preference):
+## Contact
 
-- Matrix: [@kevin:potatofrom.space](https://matrix.to/#/@kevin:potatofrom.space)
-- Email: [kevin@kliu.io](mailto:kevin@kliu.io)
-- Fediverse: [@kevin@potatofrom.space](https://fedi.potatofrom.space/@kevin)
-- [LinkedIn](https://www.linkedin.com/in/the-kevin-liu/)
+I'm always open to talk about novel project ideas, programming questions, or anything else. I'm on [Matrix](https://matrix.org) at [@kevin:kliu.io](https://matrix.to/#/@kevin:kliu.io), but you'll probably find it easiest to [email me](mailto:kevin@kliu.io). I'm also on [Twitter](https://twitter.com/kliu128), [Facebook](https://facebook.com/kliu128), [Instagram](https://instagram.com/kliu128), and [LinkedIn](https://linkedin.com/in/the-kevin-liu).
 
-You can find the source code of this blog [here](https://gitlab.kliu.io/kevin/potatofrom.space).
+## Source
 
-## GPG Key
-
-Use this for encrypted email conversations with me. (I would prefer something more like Matrix, though, if possible.)
-
-```bash
-$ gpg --fingerprint --list-keys kevin@potatofrom.space
-pub   rsa4096 2016-07-25 [SC]
-      8792 E226 0F50 7DA0 0F0D  B58E 2160 C3EB 40A9 44EC
-uid           [ultimate] Kevin Liu <kevin@potatofrom.space>
-uid           [ultimate] Kevin Liu (Old email) <batchfiles99@gmail.com>
-uid           [ultimate] Kevin Liu (Work) <kevinliu@scintillate.me>
-sub   rsa4096 2016-07-25 [E] [expires: 2019-08-15]
-sub   rsa4096 2016-07-25 [S] [expires: 2019-08-15]
-```
+You can find the source code of this blog [here](https://gitlab.kliu.io/kevin/kliu.io).
