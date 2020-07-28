@@ -1,6 +1,7 @@
 ---
 title: About
 date: 2020-07-28T09:56:48-04:00
+description: "I'm an incoming undergrad at Stanford. Here's my contact information if you'd like to reach out."
 draft: false
 ---
 

@@ -48,3 +48,7 @@ home = ["HTML", "RSS"]
         name = "GitLab"
         identifier = "gitlab"
         url = "https://gitlab.kliu.io"
+      [[languages.en.menu.main]]
+        identifier = "projects"
+        name = "Projects"
+        url = "/projects"
