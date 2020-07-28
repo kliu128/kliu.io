@@ -22,9 +22,7 @@ home = ["HTML", "RSS"]
 
 [languages]
   [languages.en]
-    title = "Potatoblog"
-    subtitle = "Kevin Liu's sporadically-updated webspace"
-    keywords = "blog tech copyright"
+    title = "Kevin Liu"
     copyright = '''
       <div>
         <p>&copy; 2020 Kevin Liu &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
@@ -38,7 +36,7 @@ home = ["HTML", "RSS"]
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Potatoblog"
+      logoText = "Kevin Liu"
       logoHomeLink = "/"
 
     [languages.en.menu]
@@ -50,15 +48,3 @@ home = ["HTML", "RSS"]
         name = "GitLab"
         identifier = "gitlab"
         url = "https://gitlab.kliu.io"
-      [[languages.en.menu.main]]
-        name = "Mastodon"
-        identifier = "mastodon"
-        url = "https://fedi.kliu.io/@kevin"
-      [[languages.en.menu.main]]
-        name = "Matrix"
-        identifier = "matrix"
-        url = "https://riot.kliu.io"
-      [[languages.en.menu.main]]
-        name = "About"
-        identifier = "about"
-        url = "/about"
