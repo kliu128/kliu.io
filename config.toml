@@ -4,6 +4,9 @@ languageCode = "en-US" # Controls site language
 paginate = 11 # Number of posts to show before paginating
 theme = "terminal" # Set default theme
 
+# disqus configuration
+disqusShortname = "kevin-liu"
+
 [outputs]
 home = ["HTML", "RSS"]
 
