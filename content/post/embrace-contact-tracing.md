@@ -5,7 +5,7 @@ description = "Google and Apple's exposure notification technology privacy-prese
 draft = false
 toc = false
 categories = []
-tags = []
+tags = ["covid", "tech"]
 images = []
 +++
 

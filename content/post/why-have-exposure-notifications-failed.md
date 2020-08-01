@@ -5,7 +5,7 @@ description = "Exposure notifications, or contact tracing apps, have failed. Itâ
 draft = false
 toc = false
 categories = []
-tags = []
+tags = ["covid", "tech"]
 images = []
 +++
 
