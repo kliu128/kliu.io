@@ -57,4 +57,6 @@ From this, we can tell:
 
 This seems like a good way to monitor how the blog is doing over time! I'm honestly surprised that anyone at all is interested enough in this site to subscribe, so I'm happy.
 
+Now, if you'll excuse me, I'm going to go stare at some more user agents.
+
 _This post is 3/100 in my goal to write 100 blog posts in a year._
