@@ -11,7 +11,7 @@ images = []
 
 _(Disclaimer: I'm not a mobile network engineer. I made this post after some Googling, because it feels like there's a lot of complexity in mobile networks that even most computer people don't talk about!)_
 
-Recently, due to increased robocalls and other spam, I've decided to switch all of my calling to a Google Voice account I own, whose number appears to be on far fewer contact lists than the number given to me by Mint Mobile, my SIM provider.
+Recently, due to increased robocalls and other spam, I've decided to switch all of my calling to a Google Voice account I own, whose number appears to be on far fewer contact lists than the number given to me by Mint Mobile, my SIM provider. To do this, I wanted to send all calls on my old number to a voicemail box explaining to call me at the other number. At first, I tried to see if my phone could block calls itself, but failing to find anything, I looked for something on the carrier level.
 
 [Google reveals](https://www.reddit.com/r/mintmobile/comments/behwyb/unconditional_call_forwarding/) that two magic phone numbers will accomplish this for me:
 
