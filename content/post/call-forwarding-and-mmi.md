@@ -1,13 +1,15 @@
 +++
-title = "A look into call forwarding and MMI codes"
+title = "How does \"Send all to voicemail\" actually work, anyway?"
 date = 2020-08-10T19:56:54-04:00
-description = "On my cell provider, you can make calls automatically go to voicemail by dialing a single phone number. But how does this all work, anyway?"
+description = "A look into call forwarding and MMI codes. On my cell provider, you can make calls automatically go to voicemail by dialing a single phone number. But how does this all work, anyway?"
 draft = false
 toc = false
 categories = []
 tags = ["tech", "retro"]
 images = []
 +++
+
+_(Disclaimer: I'm not a mobile network engineer. I made this post after some Googling, because it feels like there's a lot of complexity in mobile networks that even most computer people don't talk about!)_
 
 Recently, due to increased robocalls and other spam, I've decided to switch all of my calling to a Google Voice account I own, whose number appears to be on far fewer contact lists than the number given to me by Mint Mobile, my SIM provider.
 
@@ -22,7 +24,7 @@ I dialed the first number, and lo and behold, all my calls go to voicemail. But 
 
 The first thing I noticed is that when I called either of the two numbers above, Android gave me a toast saying "Running MMI code." Eventually, a popup window would show up saying: "Call forwarding [enabled/disabled]."
 
-Further research reveals that MMI codes, or Man-Machine Codes, have actually been established since the 2G mobile specification was created. Here's a list from a delightfully-old scan by Google Books:
+Further research reveals that MMI codes, or Man-Machine Codes, have actually been established since the 2G mobile specification was created. Here's a list from a [delightfully-old scan by Google Books](https://books.google.com/books?id=uR03kPNyx5UC&pg=PA263&lpg=PA263&dq=mmi+codes&source=bl&ots=5_Xq1--1ii&sig=ACfU3U3fSwls7kaxx5sDWZ3qFaGKNgqBow&hl=en&sa=X&ved=2ahUKEwi17K3n7JHrAhVJmnIEHQciBkEQ6AEwFnoECBIQAQ#v=onepage&q=mmi%20codes&f=false):
 
 ![](/images/call-forwarding-and-mmi/table.png)
 
