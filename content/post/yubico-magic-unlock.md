@@ -11,6 +11,8 @@ images = []
 
 Yubikeys are great for security, but not when you leave them in your computer unattended. At that point, anyone can take the key and use it for 2-factor authentication/SSH/GPG signing, so it's not much better than just using a normal password. I unfortunately have a habit of forgetting my key when I walk away from the computer. I also have login passwords that are way too long and easy to typo.
 
+[hacker news edit & a slight correction to my previous paragraph: using a Yubikey to store SSH/GPG keys _is_ actually better than just storing it locally, because you have to enter a PIN and you can lock out the user after a certain number of invalid entries. If you use it for 2FA, it does obviously become useless if your attacker has it, but hopefully you still have a secure password.]
+
 Thankfully, there's a way to solve both of these problems: use a Yubikey to unlock your computer when you put it in and lock your computer when you remove it!
 
 ## Prior art
