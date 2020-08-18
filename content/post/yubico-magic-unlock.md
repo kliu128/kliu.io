@@ -1,7 +1,7 @@
 +++
 title = "Using a Yubikey as a touchless, magic unlock key for Linux"
 date = 2020-08-16T11:29:28-04:00
-description = "Yubikeys are great for security, but not when you leave them in your computer unattended. I also have login passwords that are way too long. How to solve these problems? Use a Yubikey to unlock your computer!"
+description = "Yubikeys are great for security, but their benefits decrease somewhat when you leave them in your computer unattended. I also have login passwords that are way too long. How to solve these problems? Use a Yubikey to unlock your computer!"
 draft = false
 toc = false
 categories = []
@@ -9,9 +9,7 @@ tags = []
 images = []
 +++
 
-Yubikeys are great for security, but not when you leave them in your computer unattended. At that point, anyone can take the key and use it for 2-factor authentication/SSH/GPG signing, so it's not much better than just using a normal password. I unfortunately have a habit of forgetting my key when I walk away from the computer. I also have login passwords that are way too long and easy to typo.
-
-[hacker news edit & a slight correction to my previous paragraph: using a Yubikey to store SSH/GPG keys _is_ actually better than just storing it locally, because you have to enter a PIN and you can lock out the user after a certain number of invalid entries. If you use it for 2FA, it does obviously become useless if your attacker has it, but hopefully you still have a secure password.]
+Yubikeys are great for security, but their benefits decrease somewhat when you leave them in your computer unattended.[^3] I unfortunately have a habit of forgetting my key when I walk away from the computer. I also have login passwords that are way too long and easy to typo.
 
 Thankfully, there's a way to solve both of these problems: use a Yubikey to unlock your computer when you put it in and lock your computer when you remove it!
 
@@ -72,3 +70,4 @@ The final result is amazingly convenient, and has successfully made me remember 
 
 [^1]: You might call it Yubikey: Coronavirus Edition.
 [^2]: Yes, yes, I know there's not too much of a danger because we're all stuck at home right now. But who knows -- maybe this will be helpful when we _eventually_ get back on campus.
+[^3]: I've significantly downgraded this statement in severity after some excellent comments on Hacker News have pointed out that (1) [stealing a Yubikey is incredibly unlikely unless you're a person of interest](https://news.ycombinator.com/item?id=24192390); (2) [even if you have the Yubikey, you still can't directly extract e.g. a private key](https://news.ycombinator.com/item?id=24192138); and (3) a [Yubikey protects against SSH/GPG fraud because it can require a PIN and lock out over time](https://news.ycombinator.com/item?id=24190313). Case in point, Yubikeys are good. I'd argue that it's still not good to have your key stolen (e.g. perhaps if you're targeted by a government/[industrial espionage](https://news.ycombinator.com/item?id=24194081), or the malicious significant other attack, where they know your password and can steal your key for 2FA if unattended), but I see that it's not as much of a risk as I originally thought.
