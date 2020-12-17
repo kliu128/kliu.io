@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
+        with:
+          submodules: recursive # for terminal theme
       - name: Push to GitHub Packages
         uses: docker/build-push-action@v1
         with:
