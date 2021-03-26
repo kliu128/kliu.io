@@ -48,10 +48,6 @@ home = ["HTML", "RSS"]
         name = "About"
         url = "/about"
       [[languages.en.menu.main]]
-        name = "GitLab"
-        identifier = "gitlab"
-        url = "https://gitlab.kliu.io"
-      [[languages.en.menu.main]]
         name = "Twitter"
         identifier = "twitter"
         url = "https://twitter.com/kliu128"
