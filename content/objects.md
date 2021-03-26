@@ -19,6 +19,8 @@ Other people have good objects, too. Many of them are probably better than mine.
 - [Alexey Guzey's objects](https://guzey.com/tools-gear/)
 - [New York Times: Wirecutter](https://www.nytimes.com/wirecutter/)
 
+(I wonder if there should be a central list for this, or something.)
+
 ## The Physical
 
 Physical objects are very annoying. They have to be moved, stored, gotten from another room, etc. But _some_ of them are worth it.

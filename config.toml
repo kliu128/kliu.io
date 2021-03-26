@@ -48,13 +48,17 @@ home = ["HTML", "RSS"]
         name = "About"
         url = "/about"
       [[languages.en.menu.main]]
-        name = "Twitter"
-        identifier = "twitter"
-        url = "https://twitter.com/kliu128"
+        identifier = "objects"
+        name = "Objects"
+        url = "/objects"
       [[languages.en.menu.main]]
         identifier = "projects"
         name = "Projects"
         url = "/projects"
+      [[languages.en.menu.main]]
+        name = "Twitter"
+        identifier = "twitter"
+        url = "https://twitter.com/kliu128"
       [[languages.en.menu.main]]
         identifier = "rss"
         name = "RSS"
