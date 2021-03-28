@@ -69,6 +69,7 @@ A note: many of these apps are Apple products-only. This is kind of unfortunate.
 - [GoodNotes](https://www.goodnotes.com/) for handwritten notetaking
 - Apple Books for a book syncing system that works well enough
   - I also used to use Calibre, but I realized that I don't really need all of its complexity.
+- **[Mathpix Snip](https://mathpix.com/)** for amazing screenshot-to-LaTeX abilities
 
 ### Development
 
