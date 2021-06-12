@@ -1,6 +1,6 @@
 +++
 title = "Objects"
-date = 2021-03-26
+date = 2021-06-08
 description = "Objects I enjoy."
 +++
 
@@ -27,20 +27,23 @@ Physical objects are very annoying. They have to be moved, stored, gotten from a
 
 ### Technology
 
-- MacBook Pro (M1, 16GB RAM, 512GB SSD) for an incredible-quality computer
-  - I didn't like Apple products for a long time. Then I actually tried one, and, well. Here we are.
-- AirPods Pro for wireless earbuds that don't hurt my ears over time
-- iPad + Pencil + Paperlike case for distraction-free reading, Anki, and RemNote review (currently)
+- [AirPods Pro](https://www.apple.com/airpods-pro/) for wireless earbuds that don't hurt my ears over time
+- [iPad](https://www.apple.com/ipad-10.2/) + [Pencil](https://www.apple.com/shop/product/MK0C2AM/A/apple-pencil-1st-generation) + [a paper-like screen protector](https://smile.amazon.com/gp/product/B07YYY1DDZ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) for Anki, scratch writing, and RemNote review (currently)
+- Kindle for reading (coupled with Calibre + USB transfer for ebooks)
+  - I have the Kindle KT7, but there are better models these days.
 - [Spectre C35](https://smile.amazon.com/Sceptre-C355W-3440UN-Super-Curved-Ultrawide/dp/B0812DKDD9?sa-no-redirect=1) for an external montior
   - There are better monitors out there, but this one was a nice balance of cost and performance for me.
-- A good USB-C hub for a desk setup where you can plug in and out with just one cable
 - [Magnetic USB-C adapter](https://smile.amazon.com/gp/product/B07TT6NGBC/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1) to make plugging in and out ridiculously convenient
-- [POK3R keyboard](https://mechanicalkeyboards.com/shop/index.php?l=product_list&c=165) for a good keyboard that doesn't hurt my hands
+- [Ergodox EZ](https://ergodox-ez.com/) for an incredibly quality keyboard that doesn't squish my hands
+  - Note: nowadays the [Moonlander](https://www.zsa.io/moonlander/) might be a better choice.
+  - With [Kailh Box Jade](https://novelkeys.xyz/products/novelkeys-x-kailh-box-thick-clicks) switches for extra clickability
+- [Logitech G602](https://smile.amazon.com/Logitech-Lag-Free-Wireless-Gaming-Mouse/dp/B00E4MQODC) for a fairly speedy wireless mouse
+- [Flexispot Motorized Standing Desk Converter](https://smile.amazon.com/FlexiSpot-Motorized-Standing-Converter-Adjustable/dp/B08CC4DDGK/ref=sr_1_4?dchild=1&keywords=flexispot+motorized&qid=1620153688&s=office-products&sr=1-4) for an effective standing desk that can fit in a dorm
+- A good USB-C hub for a desk setup where you can plug in and out with just one cable
+- A USB charging station with enough ports to top off every single device I own at a time
 
 ### Potential Future Things
 
-- A standing desk converter for normal desks
-- A weighted blanket
 - A [Lumenator](https://www.lesswrong.com/posts/hC2NFsuf5anuGadFm/how-to-build-a-lumenator) to make the room look like daylight
 
 ## The Digital
@@ -49,16 +52,25 @@ A note: many of these apps are Apple products-only. This is kind of unfortunate.
 
 ### Productivity
 
-- Google Chrome for a web browser that just works ([although](https://uxdesign.cc/mozilla-firefox-google-chrome-monopoly-microsoft-internet-explorer-edge-netscape-navigator-56727b258f54))
-- [Things](https://culturedcode.com/things/) for a low-effort and pretty way to capture tasks
-  - Shout out to Emacs Org Mode, though, which I used for several years prior.
-- [Alfred](http://alfredapp.com/) for a slightly faster Spotlight
-- [Karabiner-Elements](https://karabiner-elements.pqrs.org/) for fixing macOS's insane keyboard problems
 - [Krisp](https://krisp.ai) for never having to worry about noise in video calls again
-- [SensibleSideButtons](https://sensible-side-buttons.archagon.net/) to fix the forward/back buttons on my mouse
-- [Rectangle](https://rectangleapp.com/) for window hotkeys
-- [Dropover](https://dropoverapp.com/) for making drag and drop ridiculously easy
-- [MultiTimer](https://multitimer.net/) for naming timers and counters
+- Linux-only:
+  - [i3](https://i3wm.org/) for an efficient tiling window manager. ([Sway](https://swaywm.org/) is another option, but Wayland still has a lot of rough edges wrt screen sharing and cursor lag, so I wouldn't recommend unless it's required, e.g. for a mixed DPI setup.)
+    - [Flameshot](https://flameshot.org/) for a powerful snipping tool
+    - [Redshift](http://jonls.dk/redshift/) for making screens nicer in the dark
+    - [kitti3](https://github.com/LandingEllipse/kitti3) for a quake-style dropdown terminal in i3
+    - [xidlehook](https://github.com/jD91mZM2/xidlehook) for a better idle locker daemon
+  - [PulseEffects](https://github.com/wwmm/pulseeffects) + [Pipewire](https://pipewire.org/) for noise suppression that's only *slightly* buggier and lower quality than Krisp
+
+- macOS-only:
+  - [Things](https://culturedcode.com/things/) for a low-effort and pretty way to capture tasks
+    - Shout out to Emacs Org Mode, though, which I used for several years prior.
+  - [Alfred](http://alfredapp.com/) for a slightly faster Spotlight
+  - [Karabiner-Elements](https://karabiner-elements.pqrs.org/) for fixing macOS's insane keyboard problems
+  - [SensibleSideButtons](https://sensible-side-buttons.archagon.net/) to fix the forward/back buttons on my mouse
+  - [Rectangle](https://rectangleapp.com/) for window hotkeys
+  - [Dropover](https://dropoverapp.com/) for making drag and drop ridiculously easy
+  - [MultiTimer](https://multitimer.net/) for naming timers and counters
+
 
 ### Notetaking
 
@@ -66,18 +78,20 @@ A note: many of these apps are Apple products-only. This is kind of unfortunate.
 - [RemNote](https://remnote.io) for a powerful knowledge base and amazing flashcard system
   - I tried [Roam](https://roamresearch.com). It was okay, but it felt kind of cobbled-together (markdown? paste random js into your editor to add plugins? no spaced repetition by default?). RemNote is definitely buggier, but I feel that it wins out just because it seems like it got the data structure _right_.
 - [Instapaper](https://instapaper.com) for queuing things to be read later without getting distracted in the moment
-- [GoodNotes](https://www.goodnotes.com/) for handwritten notetaking
-- Apple Books for a book syncing system that works well enough
-  - I also used to use Calibre, but I realized that I don't really need all of its complexity.
 - **[Mathpix Snip](https://mathpix.com/)** for amazing screenshot-to-LaTeX abilities
+- macOS-only:
+  - [GoodNotes](https://www.goodnotes.com/) for handwritten notetaking
+  - Apple Books for a book syncing system that works well enough
+    - I also used to use Calibre, but I realized that I don't really need all of its complexity.
 
 ### Development
 
-- [Homebrew](https://homebrew.sh) for installing things quickly
 - [Visual Studio Code](https://code.visualstudio.com/) for basically all coding
-- [iTerm 2](https://iterm2.com/) for a speedy terminal
 - [Postman](https://www.postman.com/) for API development that's actually kind of nice
 - [Tailscale](https://tailscale.com/) for connecting to local servers from anywhere
+- macOS-only:
+  - [iTerm 2](https://iterm2.com/) for a speedy terminal
+  - [Homebrew](https://homebrew.sh) for installing things quickly
 
 ### Chat
 
@@ -86,3 +100,10 @@ A note: many of these apps are Apple products-only. This is kind of unfortunate.
 ### Fun
 
 - [Spotify](https://spotify.com) for nice music
+
+## Historical
+
+Things I used to have, but no longer do. They might still be good for you, though.
+
+- MacBook Pro (M1, 16GB RAM, 512GB SSD) for an incredible-quality computer
+  - I really enjoyed the performance and battery life, but ultimately, it didn't "spark joy" since I disagree with Apple's philosophy against user control.
