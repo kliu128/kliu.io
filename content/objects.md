@@ -122,3 +122,7 @@ A note: many of these apps are Apple-only. This is kind of unfortunate. I suspec
 ### Fun
 
 - [Spotify](https://spotify.com) for nice music
+
+## For More Information
+
+If you have any questions about stuff here, or just want to talk, feel free to [reach out](/about/) any time.
