@@ -86,6 +86,7 @@ A note: many of these apps are Apple-only. This is kind of unfortunate. I suspec
   - [Dropover](https://dropoverapp.com/) for making drag and drop ridiculously easy
   - [MultiTimer](https://multitimer.net/) for naming timers and counters
   - [Intermission](https://apps.apple.com/us/app/breaks-for-eyes-rest-on-time/id1439431081?mt=12&ign-itsct=apps_box&ign-itscg=30200) for resting eyes every 20 minutes to avoid eye strain
+  - [AlDente](https://github.com/davidwernhart/AlDente) to limit the maximum charge percentage to 60% when plugged in, preserving battery life in the long term
 - Linux-only:
   - [i3](https://i3wm.org/) for an efficient tiling window manager. ([Sway](https://swaywm.org/) is another option, but Wayland still has a lot of rough edges wrt screen sharing and cursor lag, so I wouldn't recommend unless it's required, e.g. for a mixed DPI setup.)
     - [Flameshot](https://flameshot.org/) for a powerful snipping tool
