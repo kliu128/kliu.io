@@ -1,6 +1,6 @@
 +++
 title = "Staying Sane in ML: Fixing Your Terrible Data Science Tools to Improve the Research Experience"
-date = 2021-07-27T12:44:56-07:00
+date = 2021-08-05T10:09:00-07:00
 description = "While machine learning research has made incredible theoretical advances, the day-to-day tools most researchers use are... poorly optimized, to say the least. And much knowledge is locked up in people's private .bashrc files or wikis. This post aims to shed light on some very useful tools for beginning researchers."
 draft = false
 toc = false
@@ -93,6 +93,20 @@ Visual Studio Code is a _surprisingly_ good replacement for the Jupyter stack. W
 However, it's not all sunshine and roses. The Remote-SSH extension is pretty finicky, often spamming reconnection popups whenever you lose network access, and it doesn't support special cluster logins like SLURM. The Jupyter extension is also going through teething pains, so expect issues like annoying scrolling, cells hanging occasionally, and frozen interfaces.
 
 Still, though, it might all be worth it for that sweet sweet intellisense.
+
+## Use einops instead of explicit tensor operations
+
+Look at this, from the readme:
+
+```python
+from einops import rearrange
+
+# equivalent expressions
+y = x.view(x.shape[0], -1)
+y = rearrange(x, 'b c h w -> b (c h w)')
+```
+
+Never more shall you have to memorize what [`torch.repeat_interleave`](https://pytorch.org/docs/stable/generated/torch.repeat_interleave.html) does. [Einops](https://github.com/arogozhnikov/einops) replaces dozens of PyTorch/numpy/TensorFlow/JAX/more tensor operations with *three functions* that can handle everything. Use it -- [all the cool kids do](https://github.com/arogozhnikov/einops#tweets).
 
 ## Use git well
 
