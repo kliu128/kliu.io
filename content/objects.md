@@ -32,7 +32,7 @@ Physical objects are very annoying. They have to be moved, stored, gotten from a
 - [iPad](https://www.apple.com/ipad-10.2/) + [Pencil](https://www.apple.com/shop/product/MK0C2AM/A/apple-pencil-1st-generation) + [a paper-like screen protector](https://smile.amazon.com/gp/product/B07YYY1DDZ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) for Anki, scratch writing, and RemNote review (currently)
 - Kindle for reading (coupled with Calibre + USB transfer for ebooks)
   - I have the Kindle KT7, but there are better models these days.
-- [Spectre C35](https://smile.amazon.com/Sceptre-C355W-3440UN-Super-Curved-Ultrawide/dp/B0812DKDD9?sa-no-redirect=1) for an external montior
+- [Spectre C35](https://smile.amazon.com/Sceptre-C355W-3440UN-Super-Curved-Ultrawide/dp/B0812DKDD9?sa-no-redirect=1) for an external monitor 
   - There are better monitors out there, but this one was a nice balance of cost and performance for me.
 - [Magnetic USB-C adapter](https://smile.amazon.com/gp/product/B07TT6NGBC/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1) to make plugging in and out ridiculously convenient
 - [Ergodox EZ](https://ergodox-ez.com/) for an incredibly quality keyboard that doesn't squish my hands

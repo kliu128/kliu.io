@@ -29,9 +29,6 @@ home = ["HTML", "RSS"]
     copyright = '''
       <div>
         <p>&copy; 2020 Kevin Liu &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
-        <p>Potato Industries provides an SLA of at least one 9 of uptime (90%). If we
-        at any time fail to reach this standard, you are entitled to a refund of
-        usage costs.</p>
       </div>
     '''
     menuMore = "Show more"
