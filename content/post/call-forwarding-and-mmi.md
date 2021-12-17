@@ -1,7 +1,7 @@
 +++
 title = "How does \"Send all to voicemail\" actually work, anyway?"
 date = 2020-08-10T19:56:54-04:00
-description = "A look into call forwarding and MMI codes. On my cell provider, you can make calls automatically go to voicemail by dialing a single phone number. But how does this all work, anyway?"
+summary =  "A look into call forwarding and MMI codes. On my cell provider, you can make calls automatically go to voicemail by dialing a single phone number. But how does this all work, anyway?"
 draft = false
 toc = false
 categories = []

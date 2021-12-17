@@ -1,7 +1,7 @@
 +++
 title = "The Death Throes of a Seagate SMR Hard Drive"
 date = 2019-03-16T10:21:31-04:00
-description = "It's never a good sign when ZFS starts giving you **uncorrectable I/O failure** errors."
+summary =  "It's never a good sign when ZFS starts giving you **uncorrectable I/O failure** errors."
 draft = false
 toc = false
 categories = []

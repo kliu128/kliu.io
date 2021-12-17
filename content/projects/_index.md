@@ -1,8 +1,10 @@
 +++
 title = "Projects"
 date = 2020-07-28T10:05:32-04:00
-description = "Here's a snapshot of the projects I'm currently working on."
+summary =  "Here's a snapshot of the projects I'm currently working on."
 draft = false
+type = "page"
+layout = "static"
 +++
 
 Here's a snapshot of the projects I'm currently working on.
@@ -11,8 +13,8 @@ Here's a snapshot of the projects I'm currently working on.
 
 - **[Zero][]** -- my homelab, running a Matrix server, GitLab, Asterisk, and the blog you're currently reading, along with a constellation of other services that I use daily. I run a collection of Ubuntu VMs using [Proxmox][], and run [microk8s][] to deploy my services to Kubernetes.
 
-[Zero]: https://github.com/kliu128/zero
-[Proxmox]: https://proxmox.com/en/
+[zero]: https://github.com/kliu128/zero
+[proxmox]: https://proxmox.com/en/
 [microk8s]: https://microk8s.io
 
 ### Research

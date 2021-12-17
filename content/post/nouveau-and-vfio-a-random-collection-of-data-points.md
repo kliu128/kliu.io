@@ -1,7 +1,7 @@
 +++
 title = "Nouveau and VFIO: A Random Collection of Data Points"
 date = 2017-04-17T08:33:24-04:00
-description = "The struggles I faced getting Nouveau + VFIO to work"
+summary =  "The struggles I faced getting Nouveau + VFIO to work"
 draft = false
 toc = false
 categories = []

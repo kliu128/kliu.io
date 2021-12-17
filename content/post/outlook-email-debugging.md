@@ -1,7 +1,7 @@
 +++
 title = "Tracking Down a Fifteen-Hour Email Delay from Outlook & Office 365"
 date = 2019-05-11T09:40:23-04:00
-description = "TL;DR: Don't put your mail server behind a CNAME."
+summary =  "TL;DR: Don't put your mail server behind a CNAME."
 draft = false
 toc = false
 categories = []
@@ -36,4 +36,4 @@ Previously, I had the DNS set up like so: MX (mail) --> CNAME (alias to another 
 
 In summary: Outlook doesn't like MX records pointing to CNAMEs, apparently. I'd be interested to know if this is standard behavior at all or if it's just a Microsoft peculiarity (especially since all other mail servers appear to be fine with a CNAME.)
 
-edit: Actually, [upon further research](https://exchangepedia.com/2006/12/should-mx-record-point-to-cname-records-aliases.html) it appears that RFC 2181 *does* mandate pointing an MX directly to an A record. So Outlook is in the clear here (although most mail servers apparently handle MX -> CNAME -> A alright). An interesting quirk to keep in mind!
+edit: Actually, [upon further research](https://exchangepedia.com/2006/12/should-mx-record-point-to-cname-records-aliases.html) it appears that RFC 2181 _does_ mandate pointing an MX directly to an A record. So Outlook is in the clear here (although most mail servers apparently handle MX -> CNAME -> A alright). An interesting quirk to keep in mind!

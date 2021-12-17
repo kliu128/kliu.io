@@ -1,7 +1,7 @@
 +++
 title = "potatofrom.space & Matrix: Now Open for Registration"
 date = 2019-06-08T15:55:17-04:00
-description = "As of today, potatofrom.space is now open for registration as a public Matrix server."
+summary =  "As of today, potatofrom.space is now open for registration as a public Matrix server."
 # Hide because no longer true (potatofrom.space shutting down)
 draft = true
 categories = []

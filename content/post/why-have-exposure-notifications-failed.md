@@ -1,7 +1,7 @@
 +++
 title = "Why Have Exposure Notifications Failed?"
 date = 2020-07-30T10:44:30-04:00
-description = "Exposure notifications, or contact tracing apps, have failed. It’s been months since I wrote my previous post on contact tracing, and yet here’s what I see when I try to download an app."
+summary =  "Exposure notifications, or contact tracing apps, have failed. It’s been months since I wrote my previous post on contact tracing, and yet here’s what I see when I try to download an app."
 draft = false
 toc = false
 categories = []

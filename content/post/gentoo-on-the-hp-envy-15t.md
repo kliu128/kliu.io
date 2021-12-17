@@ -1,7 +1,7 @@
 +++
 title = "Gentoo on the HP Envy 15t (i7-7500U)"
 date = 2017-04-17T08:37:15-04:00
-description = "List of kernel configurations to run Gentoo successfully"
+summary =  "List of kernel configurations to run Gentoo successfully"
 draft = false
 toc = false
 categories = []

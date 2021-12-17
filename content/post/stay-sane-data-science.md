@@ -1,7 +1,7 @@
 +++
 title = "Staying Sane in ML: Fixing Your Terrible Data Science Tools to Improve the Research Experience"
 date = 2021-08-05T10:09:00-07:00
-description = "While machine learning research has made incredible theoretical advances, the day-to-day tools most researchers use are... poorly optimized, to say the least. And much knowledge is locked up in people's private .bashrc files or wikis. This post aims to shed light on some very useful tools for beginning researchers."
+summary =  "While machine learning research has made incredible theoretical advances, the day-to-day tools most researchers use are... poorly optimized, to say the least. And much knowledge is locked up in people's private .bashrc files or wikis. This post aims to shed light on some very useful tools for beginning researchers."
 draft = false
 toc = false
 categories = []
@@ -29,11 +29,11 @@ Also, Colab's limits are terrible: constantly getting disconnected and resetting
 
 ## Be aware of the speed of your storage
 
-If you're using a cluster, it will likely have different *tiers of storage* -- some will be local on the specific server you're working on, others will be network storage (NFS, often called something like "dfs"). Before getting started on a project, you should read up on your cluster's storage and use **the fastest one that can fit your data**. This sometimes can save many minutes waiting for Conda to install as it thrashes a hard drive on the other side of the computer room over the network.
+If you're using a cluster, it will likely have different _tiers of storage_ -- some will be local on the specific server you're working on, others will be network storage (NFS, often called something like "dfs"). Before getting started on a project, you should read up on your cluster's storage and use **the fastest one that can fit your data**. This sometimes can save many minutes waiting for Conda to install as it thrashes a hard drive on the other side of the computer room over the network.
 
 ## Make sure your storage is backed up
 
-You *really* don't want to lose modified code or datasets. Ensure your cluster has a backup policy, or else upload your data to a second location periodically.
+You _really_ don't want to lose modified code or datasets. Ensure your cluster has a backup policy, or else upload your data to a second location periodically.
 
 # Software
 
@@ -70,7 +70,7 @@ With this approach, instead of doing `conda install numpy`, you replace it with 
 
 ### Or, if you must, use mamba + conda-lock
 
-Granted, you might not want to use a Python-specific package manager. One of Conda's key benefits is that it can also install *system dependencies* for the packages you want, e.g. installing `cudatoolkit` along with `pytorch`.
+Granted, you might not want to use a Python-specific package manager. One of Conda's key benefits is that it can also install _system dependencies_ for the packages you want, e.g. installing `cudatoolkit` along with `pytorch`.
 
 If you find this functionality essential, you should really use **[Mamba](https://github.com/mamba-org/mamba)**. Basically, it's Conda, but with a 10x faster dependency solver written in C++.
 
@@ -106,7 +106,7 @@ y = x.view(x.shape[0], -1)
 y = rearrange(x, 'b c h w -> b (c h w)')
 ```
 
-Never more shall you have to memorize what [`torch.repeat_interleave`](https://pytorch.org/docs/stable/generated/torch.repeat_interleave.html) does. [Einops](https://github.com/arogozhnikov/einops) replaces dozens of PyTorch/numpy/TensorFlow/JAX/more tensor operations with *three functions* that can handle everything. Use it -- [all the cool kids do](https://github.com/arogozhnikov/einops#tweets).
+Never more shall you have to memorize what [`torch.repeat_interleave`](https://pytorch.org/docs/stable/generated/torch.repeat_interleave.html) does. [Einops](https://github.com/arogozhnikov/einops) replaces dozens of PyTorch/numpy/TensorFlow/JAX/more tensor operations with _three functions_ that can handle everything. Use it -- [all the cool kids do](https://github.com/arogozhnikov/einops#tweets).
 
 ## Use git well
 
@@ -145,7 +145,7 @@ That's why you need something like [torchtyping](https://github.com/patrick-kidg
 
 ## Write documentation
 
-Similar to the above, when dealing with complex tensor functions or domain-specific operations, it's very hard to tell what a function does from its name. *Write doc comments* that describe the purpose of the function in laymen's words, and describe all important inputs/outputs (with tensor shapes, if you aren't using a typing library).
+Similar to the above, when dealing with complex tensor functions or domain-specific operations, it's very hard to tell what a function does from its name. _Write doc comments_ that describe the purpose of the function in laymen's words, and describe all important inputs/outputs (with tensor shapes, if you aren't using a typing library).
 
 ## Write tests, for crying out loud
 

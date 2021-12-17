@@ -1,7 +1,7 @@
 +++
 title = "Switching to Terminal Theme"
 date = 2019-03-11T20:19:23-04:00
-description = "A new look for the same site!"
+summary =  "A new look for the same site!"
 draft = false
 toc = false
 categories = []

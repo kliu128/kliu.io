@@ -1,7 +1,7 @@
 +++
 title = "Building Tensorflow + AMD Radeon Open Compute for Ivy Bridge: The Rabbit Hole of CPU Flags and PCIe Features"
 date = 2019-04-21T10:31:43-04:00
-description = "The story of [issue 217](https://github.com/ROCmSoftwarePlatform/tensorflow-upstream/issues/217) – getting Tensorflow for AMD GPUs to work on an aging Ivy Bridge processor."
+summary =  "The story of [issue 217](https://github.com/ROCmSoftwarePlatform/tensorflow-upstream/issues/217) – getting Tensorflow for AMD GPUs to work on an aging Ivy Bridge processor."
 draft = false
 toc = false
 categories = []
@@ -17,7 +17,7 @@ So I `docker run`'d it, passing through the GPU as directed[^1], and:
 
 ```sh
 root@2a2a4a430b33:/root# python3
-Python 3.5.2 (default, Nov 23 2017, 16:37:01) 
+Python 3.5.2 (default, Nov 23 2017, 16:37:01)
 [GCC 5.4.0 20160609] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import tensorflow
@@ -28,13 +28,13 @@ root@2a2a4a430b33:/root#
 
 Hm.
 
-Initially, this error seemed inscrutable to me. I actually spent a long time looking through the `cpu_feature_guard.cc` file for where the error was located to see if it was a bug, but then I *actually read the error*. To reiterate:
+Initially, this error seemed inscrutable to me. I actually spent a long time looking through the `cpu_feature_guard.cc` file for where the error was located to see if it was a bug, but then I _actually read the error_. To reiterate:
 
 > The TensorFlow library was compiled to use AVX2 instructions, but these aren't available on your machine.
 
 [Thanks to the power of Wikipedia](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#Advanced_Vector_Extensions_2), I realized that AVX2 is a CPU extension only introduced in Intel's Haswell processors in 2013. And my computer has an i7-4820k, an Ivy Bridge processor. The question then became: Why would AMD compile a generic Docker image only for newer Intel CPUs?
 
-However, looking closer on ROCm's [Getting Started page](https://rocm.github.io/ROCmInstall.html#supported-cpus) reveals that it requires not just a supported GPU, but a supported *CPU*:
+However, looking closer on ROCm's [Getting Started page](https://rocm.github.io/ROCmInstall.html#supported-cpus) reveals that it requires not just a supported GPU, but a supported _CPU_:
 
 > GFX8 GPUs require PCIe 3.0 with PCIe atomics in order to run ROCm. In particular, the CPU and every active PCIe point between the CPU and GPU require support for PCIe 3.0 and PCIe atomics.
 >
@@ -52,16 +52,16 @@ kfd kfd: Allocated 3969056 bytes on gart
 kfd kfd: added device 1002:67df
 ```
 
-*Oh*. That did not seem like an error due to a lack of PCIe atomics. I went to Intel's [datasheet](https://www.intel.com/content/dam/www/public/us/en/documents/datasheets/4th-gen-core-i7-lga2011-datasheet-vol-1.pdf) for the 4820k, where I saw (p. 11):
+_Oh_. That did not seem like an error due to a lack of PCIe atomics. I went to Intel's [datasheet](https://www.intel.com/content/dam/www/public/us/en/documents/datasheets/4th-gen-core-i7-lga2011-datasheet-vol-1.pdf) for the 4820k, where I saw (p. 11):
 
 ![Intel datasheet showing PCIe atomic support on Ivy Bridge](/images/2019-04-21-pcie-atomics.png)
 
-🤔 So clearly my CPU *did* support atomics. Time for a [bug report](https://github.com/ROCmSoftwarePlatform/tensorflow-upstream/issues/217) (which ultimately resulted in [AMD updating its documentation](https://github.com/RadeonOpenCompute/ROCm/commit/23beff10b8916c5302ff0df6750c3585e01ea517) about supported CPUs).
+🤔 So clearly my CPU _did_ support atomics. Time for a [bug report](https://github.com/ROCmSoftwarePlatform/tensorflow-upstream/issues/217) (which ultimately resulted in [AMD updating its documentation](https://github.com/RadeonOpenCompute/ROCm/commit/23beff10b8916c5302ff0df6750c3585e01ea517) about supported CPUs).
 
-A few months passed, and `sunway513` (an AMD employee? probably?) suggested I try to build Tensorflow, from source, using the dev Docker image. So I tried that, but then I saw that the build tools were *also* compiled using invalid (Haswell) instructions. Eventually, I managed to build Tensorflow starting from a clean `ubuntu:16.04` image, installing ROCm manually, and then building Tensorflow as usual (with `-march=native`).
+A few months passed, and `sunway513` (an AMD employee? probably?) suggested I try to build Tensorflow, from source, using the dev Docker image. So I tried that, but then I saw that the build tools were _also_ compiled using invalid (Haswell) instructions. Eventually, I managed to build Tensorflow starting from a clean `ubuntu:16.04` image, installing ROCm manually, and then building Tensorflow as usual (with `-march=native`).
 
 ```
-Python 3.5.2 (default, Nov 12 2018, 13:43:14) 
+Python 3.5.2 (default, Nov 12 2018, 13:43:14)
 [GCC 5.4.0 20160609] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import tensorflow as tf

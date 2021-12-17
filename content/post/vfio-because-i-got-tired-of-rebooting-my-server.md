@@ -1,7 +1,7 @@
 +++
 title = "VFIO, Because I Got Tired of Rebooting My Server"
 date = 2017-02-18T08:22:08-04:00
-description = "An adventure on VFIO escapades in Proxmox Linux"
+summary =  "An adventure on VFIO escapades in Proxmox Linux"
 draft = false
 toc = false
 categories = []

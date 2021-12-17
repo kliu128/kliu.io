@@ -1,36 +1,30 @@
 baseurl = "https://kliu.io/" # Controls base URL
-copyright = "Kevin Liu"
 languageCode = "en-US" # Controls site language
 paginate = 11 # Number of posts to show before paginating
-theme = "terminal" # Set default theme
+theme = "whiteplain" # Set default theme
+googleAnalytics = "G-KKF0HL5TKT"
 
 # disqus configuration
 disqusShortname = "kevin-liu"
+copyright = '''
+  <p>&copy; 2021 Kevin Liu &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+'''
 
 [outputs]
 home = ["HTML", "RSS"]
 
-[params]
-  # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "post"
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "green"
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 6
-  # set theme to full screen width
-  fullWidthTheme = false
-  # center theme with default width
-  centerTheme = true
-  oneHeadingSize = false
+[params.author]
+name = "Kevin Liu"
+twitter = "kliu128"
+github = "kliu128"
+linkedin = "the-kevin-liu"
+email = "kevin@kliu.io"
+facebook = "kliu128"
+avatar = "/images/avatar.jpg"
 
 [languages]
   [languages.en]
     title = "Kevin Liu"
-    copyright = '''
-      <div>
-        <p>&copy; 2020 Kevin Liu &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
-      </div>
-    '''
     menuMore = "Show more"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
@@ -52,11 +46,3 @@ home = ["HTML", "RSS"]
         identifier = "projects"
         name = "Projects"
         url = "/projects"
-      [[languages.en.menu.main]]
-        name = "Twitter"
-        identifier = "twitter"
-        url = "https://twitter.com/kliu128"
-      [[languages.en.menu.main]]
-        identifier = "rss"
-        name = "RSS"
-        url = "/index.xml"

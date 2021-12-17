@@ -1,7 +1,7 @@
 +++
 title = "My experience in a covid vaccine trial, and why you should join one"
 date = 2021-01-07T15:38:01-05:00
-description = "Covid is probably going to get much worse before it gets better. How do we protect ourselves and those around us? I propose a novel approach."
+summary =  "Covid is probably going to get much worse before it gets better. How do we protect ourselves and those around us? I propose a novel approach."
 draft = false
 toc = false
 categories = []

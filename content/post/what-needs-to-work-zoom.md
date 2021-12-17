@@ -1,7 +1,7 @@
 +++
 title = "What needs to work for your Zoom call to work?"
 date = 2020-09-15T23:05:48-04:00
-description = "It's amazing how tall the tower of computer abstraction is. Let's explore a few of those layers here."
+summary =  "It's amazing how tall the tower of computer abstraction is. Let's explore a few of those layers here."
 draft = false
 toc = false
 categories = []

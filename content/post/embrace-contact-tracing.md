@@ -1,7 +1,7 @@
 +++
 title = "We Need to Embrace Exposure Notifications"
 date = 2020-05-16T11:54:14-04:00
-description = "Google and Apple's exposure notification technology privacy-preserving, safe, and necessary. We need to embrace it."
+summary =  "Google and Apple's exposure notification technology privacy-preserving, safe, and necessary. We need to embrace it."
 draft = false
 toc = false
 categories = []

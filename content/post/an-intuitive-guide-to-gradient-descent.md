@@ -1,7 +1,7 @@
 +++
 title = "Writing down what I know about gradient descent"
 date = 2020-08-08T17:29:22-04:00
-description = "CHANGEME"
+summary =  "CHANGEME"
 draft = true
 toc = false
 categories = []
@@ -35,7 +35,7 @@ $$-\frac{d}{dw_1} Loss(w_1) = \text{(some number that tells you which way to adj
 
 (I'm going to skip over the learning rate here, but that's also important.)
 
-If you have multiple weights, you can take a *partial derivative* (just a derivative holding every other variable constant) of the loss function with respect to each weight:
+If you have multiple weights, you can take a _partial derivative_ (just a derivative holding every other variable constant) of the loss function with respect to each weight:
 
 $$-\frac{\delta}{\delta w_1} Loss(w_1, w_2) = \text{how to adjust w1}$$
 $$-\frac{\delta}{\delta w_2} Loss(w_1, w_2) = \text{how to adjust w2}$$

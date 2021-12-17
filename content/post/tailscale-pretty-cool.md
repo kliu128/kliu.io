@@ -1,7 +1,7 @@
 +++
 title = "Tailscale is Pretty Cool"
 date = 2020-08-01T11:26:28-04:00
-description = "An automatic mesh network that uses WireGuard under the hood. Why it's good, and what I use it for."
+summary =  "An automatic mesh network that uses WireGuard under the hood. Why it's good, and what I use it for."
 draft = false
 toc = false
 categories = []
@@ -20,14 +20,14 @@ Well, you sign up for an account (which typically uses Google/other SSO), and th
 Here's an example:
 
 ```
-kevin@you:~ » ip a s tailscale0 
+kevin@you:~ » ip a s tailscale0
 59: tailscale0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1280 qdisc fq state UNKNOWN group default qlen 500
-    link/none 
+    link/none
     inet 100.65.99.106/32 scope global tailscale0
        valid_lft forever preferred_lft forever
-    inet6 fe80::7513:6301:cc50:ac0d/64 scope link stable-privacy 
+    inet6 fe80::7513:6301:cc50:ac0d/64 scope link stable-privacy
        valid_lft forever preferred_lft forever
-kevin@you:~ » ping rem.i.kliu.io 
+kevin@you:~ » ping rem.i.kliu.io
 PING rem.i.kliu.io (100.66.41.4) 56(84) bytes of data.
 64 bytes from 100.66.41.4 (100.66.41.4): icmp_seq=1 ttl=64 time=0.984 ms
 64 bytes from 100.66.41.4 (100.66.41.4): icmp_seq=2 ttl=64 time=1.11 ms
@@ -49,7 +49,7 @@ Right now, I use it primarily for interactive SSH access. In the future, I'm als
 
 Unfortunately, [it uses the userspace `wireguard-go` implementation of the WireGuard protocol, not the recently merged in kernel module](https://github.com/tailscale/tailscale/issues/426). This means that it doesn't get _quite_ the maximum performance on high-speed (e.g. Gigabit Ethernet) connections - when transferring files to my home server over NFS, I get around ~25 MB/s (200 Mbps) instead of the line speed maximum of 1 Gbps. So that, coupled with the fact that it's _really_ hard in systemd to create a mount that waits for Tailscale to start first, means that I typically don't use Tailscale for file mounting.
 
-Another issue with using a subdomain of *.i.kliu.io for my Tailscale hosts is that if I want to run any private web services over Tailscale, I won't be able to access them using their pretty hostname because of [HTTP Strict Transport Security](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security). The gist is as follows: I have enforced that my site and all subdomains present valid HTTPS encryption. However, you can't get a valid certificate for a domain that isn't on the public internet.
+Another issue with using a subdomain of \*.i.kliu.io for my Tailscale hosts is that if I want to run any private web services over Tailscale, I won't be able to access them using their pretty hostname because of [HTTP Strict Transport Security](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security). The gist is as follows: I have enforced that my site and all subdomains present valid HTTPS encryption. However, you can't get a valid certificate for a domain that isn't on the public internet.
 
 I could solve this by creating a self-signed certificate with a custom root Certificate Authority, and then adding that root CA to each of my computer's certificate stores to trust it, but that seems like a lot of hassle when I could just host the service publicly and use Let's Encrypt instead.
 

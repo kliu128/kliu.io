@@ -1,7 +1,7 @@
 +++
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = {{ .Date }}
-description = "CHANGEME"
+summary =  "CHANGEME"
 draft = true
 toc = false
 categories = []

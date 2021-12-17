@@ -1,7 +1,7 @@
 +++
 title = "LizardFS is Pretty Nice"
 date = 2019-01-21T10:28:54-05:00
-description = "My LizardFS storage setup - basically living the dream"
+summary =  "My LizardFS storage setup - basically living the dream"
 draft = false
 toc = true
 categories = []
@@ -58,14 +58,14 @@ A few things about LizardFS make me worried about its longer-term relevance.
 
 2. There have been some bugs. Sometimes, after my computer crashes, taking down the master daemon and several chunkservers, I reboot to find missing chunks. I believe this is because mounts don't wait for all data + EC writes to finish, which may be solved by [the `REDUNDANCY_LEVEL` option](https://github.com/lizardfs/lizardfs/issues/338). I'm still worried that it can happen _at all_, though.
 
-3. Scalability. The master daemon stores all metadata (e.g. filenames, modtimes) in RAM, providing lightning-quick access, but at the cost of memory usage. At times, it has grown to ~1.5 GB. This also makes extensive snapshots unusable for me, as each snapshot essentially *duplicates the entire metadata set*, doubling memory usage.
+3. Scalability. The master daemon stores all metadata (e.g. filenames, modtimes) in RAM, providing lightning-quick access, but at the cost of memory usage. At times, it has grown to ~1.5 GB. This also makes extensive snapshots unusable for me, as each snapshot essentially _duplicates the entire metadata set_, doubling memory usage.
 
-    The daemon also [forks on the hour](https://github.com/lizardfs/lizardfs/issues/323), which briefly doubles memory usage. So you basically have to reserve twice the size of the metadata set in RAM.
+   The daemon also [forks on the hour](https://github.com/lizardfs/lizardfs/issues/323), which briefly doubles memory usage. So you basically have to reserve twice the size of the metadata set in RAM.
 
-    I've tried to work around this by forcing the daemon to use swap by setting [`MemoryMax=` in `systemd`](https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html). This works surprisingly well (metadata access is still pretty fast), but it causes several-minute hangs on shutdown, so I stopped doing it.
+   I've tried to work around this by forcing the daemon to use swap by setting [`MemoryMax=` in `systemd`](https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html). This works surprisingly well (metadata access is still pretty fast), but it causes several-minute hangs on shutdown, so I stopped doing it.
 
 4. Not a lot of people use it. While Ceph / GlusterFS / SnapRAID have lots of blog posts on the internet and setup guides, LizardFS has quite sparse documentation. Hence why I'm writing this post now. For more info, I would recommend [wintersdark's guide on reddit](https://www.reddit.com/r/HomeServer/comments/98ex85/one_server_isnt_enough_my_adventures_with_lizardfs/), which introduced me to LizardFS.
 
-    If anyone else is using LizardFS or has any questions about trying it out, please [contact me](/about)!
+   If anyone else is using LizardFS or has any questions about trying it out, please [contact me](/about)!
 
 Overall, though, these aren't too bad. It's the best storage solution available right now for my use case, and I'm happy <3

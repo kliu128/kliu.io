@@ -1,7 +1,7 @@
 +++
 title = "First Look at TeaVM: Java on the Browser?"
 date = 2019-08-03T20:00:40-04:00
-description = "A young upstart named TeaVM attempts to challenge bloated JavaScript web frameworks. Can it succeed?"
+summary =  "A young upstart named TeaVM attempts to challenge bloated JavaScript web frameworks. Can it succeed?"
 draft = false
 toc = false
 categories = []
@@ -37,15 +37,15 @@ $ mvn compile
 [INFO] Final Memory: 23M/39M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.teavm:teavm-maven-plugin:0.5.1:compile (default-cli) on project knoweth: Unexpected error occured: ConcurrentModificationException -> [Help 1]
-[ERROR] 
+[ERROR]
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
+[ERROR]
 ```
 
 (Elided are hours of me trying to figure out how Maven works, since I've never used it before. I won't count that against TeaVM. If you're stuck, my understanding is that teavm's maven plugin runs by default in the `package` phase? So running `mvn compile` actually won't run it by default.)
 
-I'll save you the [Googling](https://github.com/konsoletyper/teavm/issues/363) and just say that TeaVM 0.5.1 (the latest stable release) is incompatible with Java 11, which I am using. The solution is to use their development `0.6.0-dev-*` versions from bintray. Fine - it would have been nice if TeaVM had a stable release for Java 11 (and it should be better documented), but it works. 
+I'll save you the [Googling](https://github.com/konsoletyper/teavm/issues/363) and just say that TeaVM 0.5.1 (the latest stable release) is incompatible with Java 11, which I am using. The solution is to use their development `0.6.0-dev-*` versions from bintray. Fine - it would have been nice if TeaVM had a stable release for Java 11 (and it should be better documented), but it works.
 
 ## REST Client Issues
 
@@ -99,5 +99,5 @@ I would still recommend you try it out, though! And perhaps file a few issues, o
 [flavour]: http://teavm.org/docs/flavour/templates.html
 [libgdx]: https://stackoverflow.com/questions/42466164/how-i-deploy-my-libgdx-project-to-html-js-using-teavm
 [cancer]: https://www.semitwist.com/mirror/node-js-is-cancer.html
-[REST client docs]: http://teavm.org/docs/flavour/rest-client.html
-[advanced UI components page]: http://teavm.org/docs/flavour/advanced-ui-components.html
+[rest client docs]: http://teavm.org/docs/flavour/rest-client.html
+[advanced ui components page]: http://teavm.org/docs/flavour/advanced-ui-components.html

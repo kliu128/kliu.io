@@ -1,7 +1,7 @@
 +++
 title = "Peeking at user agents for fun and profit"
 date = 2020-08-01T11:52:23-04:00
-description = "Don't ignore webserver logs! Even a cursory glance can reveal some really interesting things about the internet."
+summary =  "Don't ignore webserver logs! Even a cursory glance can reveal some really interesting things about the internet."
 draft = false
 toc = false
 categories = []

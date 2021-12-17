@@ -1,7 +1,7 @@
 +++
 title = "Using a Yubikey as a touchless, magic unlock key for Linux"
 date = 2020-08-16T11:29:28-04:00
-description = "Yubikeys are great for security, but their benefits decrease somewhat when you leave them in your computer unattended. I also have login passwords that are way too long. How to solve these problems? Use a Yubikey to unlock your computer!"
+summary =  "Yubikeys are great for security, but their benefits decrease somewhat when you leave them in your computer unattended. I also have login passwords that are way too long. How to solve these problems? Use a Yubikey to unlock your computer!"
 draft = false
 toc = false
 categories = []

@@ -1,7 +1,7 @@
 +++
 title = "Exploring the Andrew File System at Stanford"
 date = 2020-08-03T15:37:55-04:00
-description = "CHANGEME"
+summary =  "CHANGEME"
 draft = true
 toc = false
 categories = []
