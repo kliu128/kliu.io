@@ -39,6 +39,10 @@ avatar = "/images/avatar.jpg"
         name = "About"
         url = "/about"
       [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/post"
+      [[languages.en.menu.main]]
         identifier = "objects"
         name = "Objects"
         url = "/objects"

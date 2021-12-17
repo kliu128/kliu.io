@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="main" role="main">
+    <article class="article about">
+        {{ .Content }}
+    </article>
+    {{- $paginator := .Paginator }}
+
+    <h2>Recent Posts</h2>
+    <ul>
+        {{- range $paginator.Pages }}
+        <li style="margin-bottom: 0.5em"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{- end }}
+    </ul>
+    
+    <a href="/post/">All posts</a>
+</div>
+{{ end }}
