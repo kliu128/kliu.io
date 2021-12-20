@@ -29,7 +29,7 @@ Physical objects are very annoying. They have to be moved, stored, gotten from a
 
 ### Technology
 
-- [MacBook Air 13", 8 GB RAM, 256 GB SSD](https://www.apple.com/macbook-air/) as a stopgap device until Apple releases 16 inch Apple silicon MacBooks
+- [MacBook Pro 16", 2021](https://www.apple.com/macbook-pro-14-and-16/). It's good.
 - [AirPods Pro](https://www.apple.com/airpods-pro/) for wireless earbuds that don't hurt my ears over time
 - [iPad](https://www.apple.com/ipad-10.2/) + [Pencil](https://www.apple.com/shop/product/MK0C2AM/A/apple-pencil-1st-generation) + [a paper-like screen protector](https://smile.amazon.com/gp/product/B07YYY1DDZ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) for Anki, scratch writing, and RemNote review (currently)
 - Kindle for reading (coupled with Calibre + USB transfer for ebooks)
@@ -64,8 +64,10 @@ Physical objects are very annoying. They have to be moved, stored, gotten from a
     - A cheapo $10 phone mount on Amazon, for Google Maps navigation
     - [Bontrager Solstice Bike Helmet](https://www.rei.com/product/169939/bontrager-solstice-bike-helmet) (Wirecutter's best bike helmet)
     - [Tile Sticker](https://www.amazon.com/Tile-RE-25002-Sticker-2-Pack/dp/B07W63295C/ref=asc_df_B07W63295C/?tag=hyprod-20&linkCode=df0&hvadid=385248065177&hvpos=&hvnetw=g&hvrand=4584078952386084402&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031970&hvtargid=pla-828315241351&psc=1&tag=&ref=&adgrpid=76690811497&hvpone=&hvptwo=&hvadid=385248065177&hvpos=&hvnetw=g&hvrand=4584078952386084402&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031970&hvtargid=pla-828315241351) as a tracker in case it gets lost (a better option for iPhone users is likely [AirTags](https://www.apple.com/airtag/))
-    - [Custom firmware](https://pro2.cfw.sh) to enable direct power control rather than the jumpy default speed-control throttle (essentially making the throttle like a car, rather than adjusting a target speed).
+    - [Custom firmware](https://pro2.cfw.sh) to enable direct power control rather than the jumpy default speed-control throttle
+      - Essentially, this makes the throttle control power like a car, rather than adjusting a target speed.
       - This also removes the speed limit, so be warned.
+    - Silicone caulk + tape to seal all water ingress points for DIY waterproofing
   - Obligatory safety information
     - **ALWAYS** wear a helmet when riding! Scooters are far closer to a car than a bike due to the indirect control (via a throttle rather than your feet), and they are far more unstable than bikes as well. If you hit a curb at 15 MPH without a helmet, you will experience instant death (or at least a lot of pain).
     - **Consult your local regulations** before purchasing. Here in California, you need a **driver's license** to ride one, and you can't ride on the sidewalk or on roads with a speed limit over 25 MPH (unless there's a bike lane). As of 2021, they are banned on all public roads in the UK. Try not to violate the law!
