@@ -12,6 +12,7 @@ Here's a snapshot of the projects I'm currently working on.
 ## Launched
 
 - **[Zero][]** -- my homelab, running a Matrix server, GitLab, Asterisk, and the blog you're currently reading, along with a constellation of other services that I use daily. I run a collection of Ubuntu VMs using [Proxmox][], and run [microk8s][] to deploy my services to Kubernetes.
+- **[Circuit Breaker](/apps/circuit-breaker/)** -- A no-nonsense Pomodoro app that enables Focus mode to keep you in the zone. Built using SwiftUI for macOS.
 
 [zero]: https://github.com/kliu128/zero
 [proxmox]: https://proxmox.com/en/
