@@ -50,3 +50,7 @@ avatar = "/images/avatar.jpg"
         identifier = "projects"
         name = "Projects"
         url = "/projects"
+      [[languages.en.menu.main]]
+        identifier = "moments"
+        name = "Moments"
+        url = "/moments"
