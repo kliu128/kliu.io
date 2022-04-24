@@ -102,7 +102,6 @@ collections:
   news:
     defaults:
       layout: post
-comments: true
     output: true
     permalink: /news/:path/
   projects:
