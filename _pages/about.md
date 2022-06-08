@@ -6,7 +6,6 @@ subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
   address: >
     <p><a href="mailto:kevin@kliu.io">/email</a></p>
     <p><a href="https://twitter.com/kliu128">/twitter</a></p>
