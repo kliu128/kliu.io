@@ -3,7 +3,7 @@ layout: page
 title: objects
 permalink: /objects/
 description: Here are objects I like. It feels to me that having good objects is underrated.
-nav: true
+nav_order: 2
 display_categories: [work, fun]
 horizontal: false
 ---

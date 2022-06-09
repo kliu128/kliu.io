@@ -8,7 +8,7 @@ middle_name: ""
 last_name: Liu
 email: kevin@kliu.io
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  I'm a student on leave at Stanford. This is my blog.
+  I'm a student at Stanford. This is my website!
 footer_text: >
   Licensed under CC BY-SA 4.0.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
@@ -108,6 +108,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  reviews:
+    output: true
+    permalink: /reviews/:path/
 
 news_limit: 5
 
@@ -169,7 +172,7 @@ defaults:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ['robots.txt']
+  exclude: ["robots.txt"]
   uglifier_args:
     harmony: true
 
@@ -184,9 +187,9 @@ jekyll-archives:
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
+    year: "/blog/:year/"
+    tag: "/blog/tag/:name/"
+    category: "/blog/category/:name/"
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -216,7 +219,21 @@ scholar:
 
   query: "@*"
 
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website] # Filter out certain bibtex entry keywords used internally from the bib output
+filtered_bibtex_keywords: [
+    abbr,
+    abstract,
+    arxiv,
+    bibtex_show,
+    html,
+    pdf,
+    selected,
+    supp,
+    blog,
+    code,
+    poster,
+    slides,
+    website,
+  ] # Filter out certain bibtex entry keywords used internally from the bib output
 
 # -----------------------------------------------------------------------------
 # Responsive WebP Images
@@ -243,9 +260,8 @@ imagemagick:
 # -----------------------------------------------------------------------------
 
 jekyll-diagrams:
-    # configuration, see https://github.com/zhustec/jekyll-diagrams.
-    # feel free to comment out this section if not using jekyll diagrams.
-
+  # configuration, see https://github.com/zhustec/jekyll-diagrams.
+  # feel free to comment out this section if not using jekyll diagrams.
 
 # -----------------------------------------------------------------------------
 # Optional Features

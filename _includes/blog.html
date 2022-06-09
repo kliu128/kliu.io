@@ -1,17 +1,22 @@
 <div class="news">
-  <h2>posts</h2>
+  <h2>blog</h2>
+
   <div class="table-responsive">
     <table class="table table-sm table-borderless">
-      {%- assign posts = site.posts -%}
-      {% for item in posts limit: site.news_limit %}
+      {%- assign posts = site.posts -%} {% for item in posts limit:
+      site.news_limit %}
 
       <tr>
-        <th scope="row" style="text-align: right">{{ item.date | date: "%b %-d, %Y" }}</th>
+        <th scope="row" style="text-align: right">
+          {{ item.date | date: "%b %-d, %Y" }}
+        </th>
         <td>
-          {% if item.inline -%}
-          {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-          {%- else -%}
-          <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% if item.inline -%} {{ item.content | remove: '
+          <p>' | remove: '</p>
+          ' | emojify }} {%- else -%}
+          <a class="news-title" href="{{ item.url | relative_url }}"
+            >{{ item.title }}</a
+          >
           {%- endif %}
         </td>
       </tr>

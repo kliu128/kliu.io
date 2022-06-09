@@ -7,16 +7,17 @@ subtitle:
 profile:
   align: right
   address: >
-    <p><a href="mailto:kevin@kliu.io">/email</a></p>
-    <p><a href="https://twitter.com/kliu128">/twitter</a></p>
-    <p><a href="https://calendly.com/kliu128">/chat</a></p>
+    >>> contact me <<<
+    <p><a href="mailto:kevin@kliu.io">- 📧 email</a></p>
+    <p><a href="https://twitter.com/kliu128">- 🐦 twitter</a></p>
+    <p><a href="https://calendly.com/kliu128">- ☀️ irl</a></p>
 
 blog: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I'm a student on leave at Stanford interested in entrepreneurship, writing joyful
+I'm a student at Stanford interested in entrepreneurship, writing joyful
 software, and strengthening safety culture in ML. In my spare
 time, I like to [read](https://getmatter.app), [write](/blog/), and photo.
 
