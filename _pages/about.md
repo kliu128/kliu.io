@@ -19,7 +19,7 @@ social: false # includes social icons at the bottom of the page
 
 I'm a student at Stanford interested in entrepreneurship, writing joyful
 software, and strengthening safety culture in ML. In my spare
-time, I like to [read](https://getmatter.app), [write](/blog/), and photo.
+time, I like to [read](/reads), [write](/blog/), and [photo](https://www.icloud.com/sharedalbum/#B0iJtdOXmkYghC).
 
 This spring, I'm working on [Chord](https://chordapp.io), an app to improve
 intros between friends.

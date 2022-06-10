@@ -62,8 +62,12 @@
                 </div>
               </li>
               {%- else %}
+              {% assign url = p.url %}
+              {% if p.override_url != nil %}
+                {% assign url = p.override_url %}
+              {% endif %}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-                <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
+                <a class="nav-link" href="{{ url | relative_url }}">{{ p.title }}
                   {%- if page.title == p.title -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
