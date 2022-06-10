@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: post
 date: 2022-05-08
+comments: true
 title: Ken Liu, The Hidden Girl and Other Stories
+categories: [book]
 description: meta-narrative and an unlikely but thought-provoking story of how we get to uploading
 ---
 

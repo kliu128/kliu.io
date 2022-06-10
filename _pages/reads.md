@@ -12,7 +12,7 @@ I read things! Somewhat more frequently than I write.
 ## reviews
 
 <ul>
-{% for item in site.reviews reversed %}
+{% for item in site.categories.book %}
 
 <li>
   <strong>

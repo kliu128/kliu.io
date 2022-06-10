@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: post
+comments: true
 title: John Gall, Systemantics
 date: 2022-06-09
+categories: [book]
 description: the ravings of a crazy pediatrician about systems
 ---
 
