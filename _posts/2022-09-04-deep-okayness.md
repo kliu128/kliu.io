@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Deep okayness as a subjective choice of beliefs
-date: 2022-07-09
+date: 2022-09-04
 tags: [reflection]
 description: What separates people who are content from those who aren’t? Tl; dr glass half full.
 ---
