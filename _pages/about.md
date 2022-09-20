@@ -21,8 +21,7 @@ I'm a student at Stanford interested in entrepreneurship, writing joyful
 software, and strengthening safety culture in ML. In my spare
 time, I like to [read](/reads), [write](/blog/), and [photo](https://www.icloud.com/sharedalbum/#B0iJtdOXmkYghC).
 
-This spring, I'm working on [Chord](https://chordapp.io), an app to improve
-intros between friends.
+This fall, I'm working with [https://sidneyh.com] on Chord, a consumer AI startup.
 
 You might want to see my [projects](https://github.com/kliu128) or
 [tweets](https://twitter.com/kliu128). Feel free to get in
