@@ -138,7 +138,8 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+# Include redirects file for Netlify
+include: ["_pages", "_redirects"]
 exclude:
   - bin
   - Gemfile
