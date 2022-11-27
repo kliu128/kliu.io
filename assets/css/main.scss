@@ -1,9 +1,12 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
-// Dimensions
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Dimensions */
 $max-content-width: {{ site.max_width }};
 
 @import

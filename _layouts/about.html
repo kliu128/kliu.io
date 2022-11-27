@@ -13,33 +13,47 @@ layout: default
   </header>
 
   <article>
-    {% if page.profile -%}
-    <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-      {%- if page.profile.image %}
-      {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-      {% include figure.html
-      path=profile_image_path
-      class="img-fluid z-dept-1 profile-pic"
-      alt=page.profile.image -%}
-      {% endif -%}
-      {%- if page.profile.address %}
-      <div class="address">
-        {{ page.profile.address }}
+
+    <div class="t-clearfix">
+      <div class="t-float-right t-font-mono t-ml-5 t-max-w-[12rem]">
+        <p class="t-font-bold">&gt;&gt; kevin.vcf &lt;&lt;</p>
+
+        <ul style="list-style-type: '- '">
+          <li><a href="mailto:kevin@kliu.io">📧 email</a></li>
+          <li><a href="https://twitter.com/kliu128">🐦 twitter</a></li>
+          <li><a href="https://calendly.com/kliu128">🔆 video/irl</a></li>
+        </ul>
+
+        <p class="t-font-bold"> &gt;&gt; blogroll &lt;&lt; </p>
+
+        friends:
+        <ul style="list-style-type: '- '">
+          <li><a href="https://shough.me/">sidney hough</a></li>
+          <li><a href="https://caseymanning.github.io">casey manning</a></li>
+          <li><a href="https://miles.land/">miles mccain</a></li>
+          <li><a href="https://jujujulian.xyz/">julian q</a></li>
+          <li><a href="https://ksharda.me/">kunal sharda</a></li>
+          <li><a href="https://lindatong.substack.com/">linda tong</a></li>
+        </ul>
+
+        others:
+        <ul style="list-style-type: '- '">
+          <li><a href="https://danluu.com/">dan luu</a></li>
+          <li><a href="https://reboothq.substack.com">reboot</a></li>
+          <li><a href="https://bounded-regret.ghost.io/">bounded regret</a></li>
+          <li><a href="https://thezvi.wordpress.com/">don't worry about the vase</a></li>
+          <li><a href="https://gwern.net">gwern</a></li>
+        </ul>
       </div>
+      {{ content }}
+      {% include newsletter_signup.html %}
+
+      {% if page.blog -%}
+      <!-- News -->
+      {%- include blog.html %}
       {%- endif %}
     </div>
-    {%- endif %}
 
-    <div class="clearfix">
-      {{ content }}
-    </div>
-
-    {% include newsletter_signup.html %}
-
-    {% if page.blog -%}
-    <!-- News -->
-    {%- include blog.html %}
-    {%- endif %}
     {% if page.selected_papers -%}
     <!-- Selected papers -->
     {%- include selected_papers.html %}

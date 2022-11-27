@@ -4,14 +4,6 @@ title: about
 permalink: /
 subtitle:
 
-profile:
-  align: right
-  address: >
-    >> kevin.vcf <<
-    <p><a href="mailto:kevin@kliu.io">- 📧 email</a></p>
-    <p><a href="https://twitter.com/kliu128">- 🐦 twitter</a></p>
-    <p><a href="https://calendly.com/kliu128">- ☀️ irl</a></p>
-
 blog: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page

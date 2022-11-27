@@ -161,9 +161,15 @@ plugins:
   - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-sitemap
+  - jekyll-postcss
   - jekyll-target-blank
   - jekyll-twitter-plugin
   - jemoji
+
+# Disable CSS cache to avoid issues with the Tailwind JIT
+# see https://github.com/mhanberg/jekyll-postcss
+postcss:
+  cache: false
 
 # Sitemap settings
 defaults:
