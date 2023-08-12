@@ -9,9 +9,12 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I'm a student at Stanford interested in joyful software, entrepreneurship, and improving safety culture in machine learning. In my spare
-time, I like to [read](/reads), [write](/blog/), and [photo](https://www.icloud.com/sharedalbum/#B0iJtdOXmkYghC). This spring, I'm working with [Sidney](https://shough.me) on Chord, a consumer AI startup.
+Right now, I'm making language models be nice at OpenAI. Broadly, I'm interested in improving safety culture in AI, understanding what regulation looks like in times of change, and figuring out how to properly, maximally appreciate life.
+
+Previously, I cofounded [Chord](https://chord.pub) ([Neo](https://neo.com) '22) and was a student at Stanford. I live in the terrible and wonderful city of San Francisco.[^1] In my spare time, I like to [read](/reads), [write](/blog/), and [photo](https://www.icloud.com/sharedalbum/#B0iJtdOXmkYghC).
 
 You might want to see my [projects](https://github.com/kliu128) or
 [tweets](https://twitter.com/kliu128). If you have cool thoughts, know the fundamental causes of the 1970s Great Stagnation, or just want to reach out, don't hesitate to contact me through
 [e-mail](mailto:kevin@kliu.io) or [videophone](https://calendly.com/kliu128).
+
+[^1]: It's mostly terrible.
