@@ -20,12 +20,12 @@ horizontal: false
 
 ### Research
 
-- **[CLIP Enrichment Circuits](https://seri-win21-circuits.github.io/clip-enrichment-circuits/)**  
-  Sidney Hough, Kevin Liu, Jack Ryan, Chelsea Voss  
+- **[CLIP Enrichment Circuits](https://seri-win21-circuits.github.io/clip-enrichment-circuits/)**
+  Sidney Hough, Kevin Liu, Jack Ryan, Chelsea Voss
   _Stanford Existential Risks Initiative_
 
-- **Stanford MLab at SemEval-2021 Task 1: Tree-Based Modelling of Lexical Complexity using Word Embeddings**  
-  Erik Rozi, Niveditha Iyer, Gordon Chi, Enok Choe, Kathy J. Lee, Kevin Liu, Patrick Liu, Zander Lack, Jillian Tang, Ethan A. Chi  
+- **Stanford MLab at SemEval-2021 Task 1: Tree-Based Modelling of Lexical Complexity using Word Embeddings**
+  Erik Rozi, Niveditha Iyer, Gordon Chi, Enok Choe, Kathy J. Lee, Kevin Liu, Patrick Liu, Zander Lack, Jillian Tang, Ethan A. Chi
   _15th International Workshop on Semantic Evaluation (SemEval-2021)_
 
 ## Completed & Past Projects
